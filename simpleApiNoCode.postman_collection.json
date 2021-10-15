@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "d0ec9441-f6a4-4467-b7d5-83c585b4443a",
+		"name": "simpleApiNoCode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localApi",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mockJsonServer",
+			"item": [
+				{
+					"name": "Getting all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://my-json-server.typicode.com/NickShmel/simpleApiNoCode/users",
+							"protocol": "https",
+							"host": [
+								"my-json-server",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"NickShmel",
+								"simpleApiNoCode",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creating new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nick\",\r\n    \"id\": 4,\r\n    \"age\": 40\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my-json-server.typicode.com/NickShmel/simpleApiNoCode/users",
+							"protocol": "https",
+							"host": [
+								"my-json-server",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"NickShmel",
+								"simpleApiNoCode",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updatin user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nick\",\r\n    \"age\": 133\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my-json-server.typicode.com/NickShmel/simpleApiNoCode/users/3",
+							"protocol": "https",
+							"host": [
+								"my-json-server",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"NickShmel",
+								"simpleApiNoCode",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updatin user Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my-json-server.typicode.com/NickShmel/simpleApiNoCode/users/3",
+							"protocol": "https",
+							"host": [
+								"my-json-server",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"NickShmel",
+								"simpleApiNoCode",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
